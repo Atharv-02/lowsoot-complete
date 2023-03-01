@@ -1,0 +1,49 @@
+:root {
+  font-size: 62.5%;
+  --side-icon-hover: #ffffff;
+  --side-icon-shadow: rgba(216, 210, 252, 0.64);
+  --home-button: rgba(216, 210, 252, 0.64);
+  --sidenav-background: #e5e5e5;
+  --topbar-logos: rgba(216, 210, 252, 0.64);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.topbarv2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.topbarv2__imgcont {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column-start: 2;
+}
+.topbarv2__logo {
+  height: 4.8rem;
+  width: 4.8rem;
+  background-color: var(--side-icon-hover);
+  border-radius: 2rem;
+  box-shadow: 0 0.4rem 1.5rem var(--topbar-logos);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50%);
+}
+.topbarv2__logoimg {
+  height: 2.6rem;
+  width: 2.6rem;
+}
+.topbarv2__logos {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.2rem;
+  margin-right: 4.3rem;
+}
+.topbarv2__imgmain {
+  max-width: 20rem;
+}

@@ -1,0 +1,49 @@
+:root {
+  font-size: 62.5%;
+  --logout-btn-color: #ca79c6;
+  --logout-cancel-btn-color: #fff;
+  --logout-cancel-btn-color-shadow: 0 0.4rem 1.5rem;
+  --tinge-blue: #4d7cfe;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.loginmodalcont {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+  padding: 0 5rem;
+}
+.loginmodalcont__cancelbtn {
+  background-color: var(--logout-cancel-btn-color);
+  color: var(--tinge-blue);
+  box-shadow: 0 0 0 0.1rem var(--tinge-blue);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  letter-spacing: -0.05em;
+  border-radius: 0.5rem;
+}
+.loginmodalcont__logoutbtn {
+  background-color: var(--tinge-blue);
+  color: var(--logout-cancel-btn-color);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  letter-spacing: -0.05em;
+  border-radius: 0.5rem;
+}
+.loginmodal__header {
+  font-size: 2.4rem;
+  font-family: Helvetica, sans-serif;
+}
+.loginmodalcont__buttons {
+  display: flex;
+  gap: 3rem;
+}

@@ -1,0 +1,147 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"); */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('./styles/final/styles.css');
+@import url('./styles/dashboard/styles/styles.css');
+@import url('./styles/databoard/styles/styles.css');
+@import url('./styles/sidebar/sidebarvv2.css');
+@import url('./styles/sidebar/Sidenavv3.css');
+@import url('./styles/report/styles/styles.css');
+@import url('./styles/home/styles/homemain.css');
+@import url('./styles/topbar/style.css');
+@import url('./styles/homepage/styles.css');
+@import url('./styles/signup/sigin.css');
+:root {
+  font-family: 'Inter', sans-serif;
+}
+.india__flag {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 8rem;
+  margin-bottom: 3.438rem;
+  margin-top: 5.625rem;
+}
+.made__in__india {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.registered__by__lowsoot {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.invisible {
+  visibility: hidden;
+}
+.hide {
+  display: none;
+}
+.Toastify__toast-container {
+  font-size: 1.6rem;
+}
+.helvetica {
+  font-family: Helvetica, sans-serif;
+}
+.summarygrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 5rem;
+}
+.sigin__inputdemo {
+  width: 100%;
+}
+.color-red {
+  color: red;
+}
+.datefilters {
+  margin-bottom: 3rem;
+}
+.introjs-tooltiptext {
+  font-size: 1.6rem;
+}
+.downloading {
+  display: flex;
+  margin: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.reportmaincontent {
+  gap: 1.5rem;
+}
+.reportmainheader {
+  margin: 0rem;
+  display: inline-block;
+}
+.reportmaincont__end {
+  margin-top: 0rem;
+  margin-right: 5rem;
+}
+.summaryparam {
+  min-width: 170px;
+  max-width: 360px;
+  font-family: 'Inter', sans-serif;
+}
+.summaryparam .summaryparam__value {
+  font-size: 1.5rem;
+  font-weight: 900;
+  align-self: flex-start;
+}
+
+.summaryparam .summaryparam__title {
+  font-size: 1.9rem;
+}
+.summaryparams {
+  margin-top: 1.75rem;
+  margin-bottom: 0;
+}
+
+.smallest {
+  font-size: 1.8rem !important;
+}
+.homevizgraph__cont {
+  gap: 1rem;
+}
+.dashparameter .dashparameter___textvalue {
+  font-size: 16.7px;
+}
+.head-content,
+.bg {
+  background-color: #fff;
+}
+.scope-1-fill {
+  margin-left: 1rem;
+}
+.sum-1 {
+  margin-left: 1rem;
+}
+.sum-last {
+  padding-bottom: 2rem;
+}
+.dashparameter {
+  font-family: 'Inter', sans-serif;
+}
+
+text {
+  font-weight: 700;
+}
+.main-load {
+  font-size: 4rem;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+input,
+select {
+  display: block;
+}

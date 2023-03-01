@@ -1,0 +1,163 @@
+:root {
+  font-size: 62.5%;
+  --pure-black: #000000;
+  --light-black: #4f4f4f;
+  --tinge-blue: #4d7cfe;
+  --blank-white: #ffffff;
+  --orline-gray: #7b7b7b;
+  --google-signin-text: #6d6d6d;
+  --signin-sidepaint: #d8d2fc;
+  --plain-white: #fff;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.siginpage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+.sigin__side {
+  background-color: var(--signin-sidepaint);
+  width: 100%;
+}
+.sigin__side img {
+  width: 750px;
+}
+/* #D8D2FC */
+.sigin__container {
+  background-color: var(--blank-white);
+  max-height: 82rem;
+  width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sigin__header {
+  font-weight: 600;
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  color: var(--pure-black);
+}
+.sigin__message {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  color: var(--light-black);
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.sigin__formonsite {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  gap: 1rem;
+  max-width: 50rem;
+}
+.sigin__form {
+  background: var(--blank-white);
+}
+.sigin__input {
+  padding: 2rem;
+  font-weight: 400;
+  max-width: 56rem;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  color: #000;
+  border: none;
+}
+.sigin__button {
+  background-color: var(--tinge-blue);
+  padding: 2rem 0;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.6rem;
+  color: var(--blank-white);
+  border-radius: 1rem;
+  max-width: 56rem;
+}
+.sign__options {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.sign__line {
+  background-color: var(--orline-gray);
+  height: 0.1rem;
+  flex-grow: 1;
+}
+.sign__or {
+  flex-shrink: 1;
+  color: var(--orline-gray);
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+.sigin__withgoogle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: inherit;
+}
+.sigin__withgoogleicon {
+  height: 2.6rem;
+  width: 2.6rem;
+}
+.sigin__withgoogletext {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  color: var(--google-signin-text);
+}
+.loadingspinner {
+  pointer-events: none;
+  width: 2rem;
+  height: 2rem;
+  aspect-ratio: 1;
+  border: 0.25rem solid white;
+  border-bottom: transparent;
+  border-left: transparent;
+  border-radius: 50%;
+}
+.spinning {
+  animation: spinning 1.5s linear infinite;
+}
+@keyframes spinning {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.sigin__buttonsubcont {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.input-login {
+  width: 400px;
+  padding: 1.2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  border: 0.1px solid black;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  outline-width: 0.1rem;
+}
+.btn-submit {
+  display: block;
+  width: 400px;
+  padding: 1.2rem 1.75rem;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  background-color: #4d7cfe;
+  border: none;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 700;
+  transition: all 0.7s linear;
+}
+.btn-submit:hover {
+  background-color: rgb(66, 97, 180);
+}

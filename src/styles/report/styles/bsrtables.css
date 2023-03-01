@@ -1,0 +1,71 @@
+:root {
+  font-size: 62.5%;
+  --report-edit-btn-bg: #ff706f;
+  --report-save-btn-bg: #ca79c6;
+  --report-top-btn-color: #ffffff;
+  --plain-white: #fff;
+  --report-text-contact-color: #271e4a;
+  --report-text-light-color: rgba(39, 30, 74, 0.8);
+  --report-emission-table-color: #271e4a;
+  --report-emission-table-source-color: rgba(63, 119, 155, 1);
+  --co2e-shadow: rgba(185, 178, 226, 0.64);
+  --report-mobile-source-color: rgba(39, 30, 74, 1);
+  --progressbar-back: #e0e9f4;
+  --pbar-color-1: #ca79c6;
+  --pbar-color-2: #79cfa6;
+  --pbar-color-3: #77beeb;
+  --pbar-color-4: #ff706f;
+  --download-btn-shadow: #ecb4e9;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.bsr_table {
+  font-size: 1.6rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  /* border-collapse: collapse;
+  border-spacing: 0px; */
+}
+.bsr_table_details {
+  font-size: 1.6rem;
+  word-wrap: break-word;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.bsr_thead {
+  font-size: 1.6rem;
+}
+.bsr_tr {
+  font-size: 1.6rem;
+  word-wrap: break-word;
+}
+.bsr_th {
+  font-size: 1.6rem;
+  word-wrap: break-word;
+  max-width: 20rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0 0 0.1rem black;
+  /* border: 1px solid black; */
+}
+.bsr_td {
+  font-size: 1.6rem;
+  word-wrap: break-word;
+  max-width: 20rem;
+  padding: 0.5rem 1rem;
+  /* border: 1px solid black; */
+  box-shadow: 0 0 0 0.1rem black;
+}
+.full_colspan {
+  font-size: 1.6rem;
+  word-wrap: break-word;
+  padding: 0.5rem 1rem;
+  /* border: 1px solid black; */
+  box-shadow: 0 0 0 0.1rem black;
+}

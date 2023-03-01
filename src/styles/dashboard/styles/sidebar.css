@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
+:root {
+  font-size: 62.5%;
+  --side-icon-hover: #ffffff;
+  --side-icon-shadow: rgba(216, 210, 252, 0.64);
+  --home-button: rgba(216, 210, 252, 0.64);
+  --sidenav-background: #e5e5e5;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.sidenav__logocont {
+  margin-left: auto;
+  margin-right: auto;
+  width: min-content;
+  height: min-content;
+}
+.sidenav__logoimg {
+  width: 5rem;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sidenav__logo {
+  text-align: center;
+  margin-top: 6rem;
+}
+.sidenav__logopara {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.sidenav {
+  background: linear-gradient(
+    to bottom,
+    #efedfe,
+    #f1edfd,
+    #f2edfc,
+    #f3eefb,
+    #f4eefa,
+    #f6eff9,
+    #f8eff8,
+    #f9f0f7,
+    #fbf1f6,
+    #fcf1f5,
+    #fdf2f4,
+    #fdf3f3
+  );
+}
+.sidenav__navigate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 10rem;
+}
+.sidenav__navigateitm {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.sidenav__navigateitmimg {
+  width: 100%;
+}
+.sidenav__navigateitmlogo {
+  height: 2.6rem;
+  width: 2.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidenav__navigateitmtooltiplogo {
+  height: 2.6rem;
+  width: 2.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidenav__navigateitmtooltip {
+  display: none;
+}
+.sidenav__navigateitm:hover .sidenav__navigateitmtooltip {
+  display: block;
+  position: absolute;
+  left: 32%;
+  width: 18rem;
+  padding: 0 3rem 0 1.9rem;
+  font-size: 1.8rem;
+  height: 4rem;
+  display: flex;
+  gap: 1rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  background: var(--side-icon-hover);
+  height: 6.4rem;
+  box-shadow: 0 0.4rem 1.5rem var(--side-icon-shadow);
+}
+.sidenav__homemenu {
+  margin-top: 8rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.4rem;
+  height: 6.4rem;
+  background: var(--side-icon-hover);
+  box-shadow: 0 0.4rem 1.5rem var(--home-button);
+  border-radius: 2rem;
+  margin-bottom: 4rem;
+  overflow: hidden;
+}
+.sideLink:active,
+.sideLink:hover,
+.sideLink:visited,
+.sideLink:link {
+  color: rgba(39, 30, 74, 1);
+}
+.sidenavv3__navigate {
+  font-family: 'Inter', sans-serif;
+}
+.sidenavv3__homemenulink {
+  font-family: 'Inter', sans-serif;
+}

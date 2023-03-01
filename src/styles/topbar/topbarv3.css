@@ -1,0 +1,76 @@
+:root {
+  font-size: 62.5%;
+  --side-icon-hover: #ffffff;
+  --side-icon-shadow: rgba(216, 210, 252, 0.64);
+  --home-button: rgba(216, 210, 252, 0.64);
+  --sidenav-background: #e5e5e5;
+  --topbar-logos: rgba(216, 210, 252, 0.64);
+  --topbar-logo-icon-bg: #f2f2f2;
+  --topbar-v3-bg: #fff;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.topbarv3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8rem;
+  background-color: white;
+}
+.topbarv3__imglogocont {
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topbarv3__imglogo {
+  width: 100%;
+  transform: scale(1.5);
+}
+.topbarv3__companytext {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+  color: #757575;
+  margin-left: 1rem;
+}
+.topbarv3__companycont {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.topbarv3__imgcont {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column-start: 2;
+}
+.topbarv3__logo {
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: var(--topbar-logo-icon-bg);
+}
+.topbarv3__logoimg {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+.topbarv3__logos {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  gap: 1.2rem;
+}
+.topbarv3__imgmain {
+  max-width: 20rem;
+}

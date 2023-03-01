@@ -1,0 +1,45 @@
+@import url("sidebar.css");
+@import url("topbar.css");
+@import url("dashmain.css");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css");
+:root {
+  font-size: 62.5%;
+  --side-icon-hover: #ffffff;
+  --plain-white: #ffffff;
+  --side-icon-shadow: rgba(216, 210, 252, 0.64);
+  --home-button: rgba(216, 210, 252, 0.64);
+  --sidenav-background: #e5e5e5;
+  --topbar-logos: rgba(216, 210, 252, 0.64);
+  --parameter-value: rgba(123, 123, 123, 1);
+  --scope-1-fill: #CFBEF0;
+  --scope-2-fill: #BBF1E3;
+  --scope-3-fill: #FFEFCD;
+  --scope-4-fill: #FFD3D3;
+  --graph-header-text: rgba(39, 30, 74, 1);
+  --graoh-bg: rgba(255, 255, 255, 1);
+  --area-graph-bg: rgba(255, 255, 255, 0.5);
+  --area-graph-shadow1: rgba(50, 50, 71, 0.01);
+  --area-graph-shadow2: rgba(50, 50, 71, 0.06);
+  --web-plat-green-color: #79cfa6;
+  --web-plat-red-color: #ff706f;
+  --web-plat-bg: #e5e5e5;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.dcontainer {
+  display: grid;
+  grid-template-columns: 18.4rem auto;
+  height: 100vh;
+}
+
+button {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}

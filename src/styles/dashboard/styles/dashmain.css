@@ -1,0 +1,263 @@
+:root {
+  font-size: 62.5%;
+  --side-icon-hover: #ffffff;
+  --plain-white: #ffffff;
+  --side-icon-shadow: rgba(216, 210, 252, 0.64);
+  --home-button: rgba(216, 210, 252, 0.64);
+  --sidenav-background: #e5e5e5;
+  --topbar-logos: rgba(216, 210, 252, 0.64);
+  --parameter-value: rgba(123, 123, 123, 1);
+  --scope-1-fill: #cfbef0;
+  --scope-2-fill: #bbf1e3;
+  --scope-3-fill: #ffefcd;
+  --scope-4-fill: #ffd3d3;
+  --scope-1-element-fill: #926bff;
+  --scope-2-element-fill: #10ac84;
+  --scope-3-element-fill: #ff9f43;
+  --scope-4-element-fill: #ee5253;
+  --graph-header-text: rgba(39, 30, 74, 1);
+  --graoh-bg: rgba(255, 255, 255, 1);
+  --area-graph-bg: rgba(255, 255, 255, 0.5);
+  --area-graph-shadow1: rgba(50, 50, 71, 0.01);
+  --area-graph-shadow2: rgba(50, 50, 71, 0.06);
+  --web-plat-green-color: #cfbef0;
+  --web-plat-red-color: #ff706f;
+  --web-plat-bg: #e5e5e5;
+  --dashboard-page-color-fill: #f5f6fa;
+  --connected-text-col: #0d8a6a;
+  --connected-bg: #bbf1e3;
+  --tinge-blue: #2e86de;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+.dashmain {
+  background-color: var(--dashboard-page-color-fill);
+  display: grid;
+  grid-template-rows: 6rem auto;
+}
+.dashmaincontent {
+  display: flex;
+  flex-direction: column;
+  padding-left: 4rem;
+  padding-right: 3rem;
+}
+.dashheader {
+  font-weight: 600;
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.dashparameter {
+  background-color: var(--plain-white);
+  padding: 3rem;
+  line-height: 3rem;
+  border-radius: 2rem;
+}
+.dashparameter___img {
+  width: 100%;
+}
+.dashparameter___imgcont {
+  width: 8rem;
+  height: 8rem;
+}
+.dashparameter___textcont {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.dashparameter___textvalue {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 4.8rem;
+}
+.dashparameter___textname {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.dashparameters {
+  display: flex;
+  gap: 2rem;
+}
+
+.scope-1-fill {
+  background-color: var(--scope-1-fill);
+}
+.scope-2-fill {
+  background-color: var(--scope-2-fill);
+}
+.scope-3-fill {
+  background-color: var(--scope-3-fill);
+}
+.scope-4-fill {
+  background-color: var(--scope-4-fill);
+}
+.scope-1-value-fill {
+  color: var(--scope-1-element-fill);
+}
+.scope-2-value-fill {
+  color: var(--scope-2-element-fill);
+}
+.scope-3-value-fill {
+  color: var(--scope-3-element-fill);
+}
+.scope-4-value-fill {
+  color: var(--scope-4-element-fill);
+}
+.dashgraphlinecont {
+  /* width: 59.8rem;
+  height: 41.8rem; */
+  background: var(--side-icon-hover);
+  /* border-radius: 4.7rem; */
+  border-radius: 2rem;
+  /* padding: 1rem 2rem; */
+  padding: 3.2rem 3rem;
+}
+.dashgraphbarcont {
+  /* width: 58.8rem;
+  height: 41.8rem; */
+  background: var(--side-icon-hover);
+  /* border-radius: 4.7rem; */
+  border-radius: 2rem;
+  /* margin-left: 2.4rem; */
+  background: var(--side-icon-hover);
+  /* border-radius: 4.7rem; */
+  border-radius: 2rem;
+  /* padding: 1rem 2rem; */
+  padding: 3.2rem 3rem; /* for changing the bich ka diff*/
+}
+.dashgraphs {
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.8rem;
+  /* padding-left: 8rem; */
+}
+.dashgraphs__cont {
+  margin-top: 0;
+}
+.dashgraph__header {
+  color: var(--graph-header-text);
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 1.8rem;
+  font-weight: 600;
+}
+.dashgraphbar__cont {
+  width: 53rem;
+  background-color: var(--graoh-bg);
+  height: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.dashgraphline__cont {
+  width: 50rem;
+  background-color: var(--graoh-bg);
+  height: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.dashgrapharea {
+  width: 73rem;
+  height: 33rem;
+  background: var(--area-graph-bg);
+  box-shadow: 0 0.4rem 10.3rem var(--area-graph-shadow1),
+    0 0.4rem 5.9rem var(--area-graph-shadow2);
+  border-radius: 1.6rem;
+  margin-bottom: 5rem;
+}
+.dashgraphblock {
+  margin-top: 8.2rem;
+  /* margin-left: 5.2rem; */
+  display: flex;
+  gap: 8.7rem;
+}
+.dashplatforms {
+  /* height: 29.1rem;
+  width: 32rem; */
+  display: flex;
+  background-color: var(--plain-white);
+  flex-direction: column;
+  height: min-content;
+  padding: 3.2rem 3rem;
+  border-radius: 1.6rem;
+}
+.dashplatform__header {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+.dashplatform__item {
+  display: flex;
+  justify-content: center;
+  width: 28rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.dashplatform__cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.uber {
+  margin-left: 2rem;
+}
+.goibibo {
+  margin-left: 1rem;
+}
+.ola {
+  margin-left: 1rem;
+}
+.dashplatform__status--conected {
+  background: var(--web-plat-green-color);
+  background: var(--connected-bg);
+  border-radius: 0.5rem;
+  color: var(--connected-text-col);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  border: none;
+  padding: 0 1rem;
+}
+.dashplatform__status--conect {
+  background: initial;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  border: none;
+  padding: 0 1rem;
+  color: var(--tinge-blue);
+  border: 0.05rem solid var(--tinge-blue);
+  border-radius: 0.5rem;
+}
+.dashgraphs {
+  margin-top: 2rem;
+}
+.product_tab_value {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 4rem;
+  letter-spacing: -0.04em;
+  color: #4d7cfe;
+  align-self: flex-start;
+}
+.product_tab_title {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+.arrange {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

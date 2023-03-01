@@ -1,0 +1,21 @@
+:root {
+  font-size: 62.5%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.homemaincontent {
+  display: flex;
+  flex-direction: column;
+}
+.homemainheader {
+  margin-top: 2.1rem;
+  margin-left: 3.4rem;
+  font-size: 4.2rem;
+  font-weight: 500;
+}
+.reportmaincont__downlaoddata button {
+  transform: translateY(5.5rem);
+}
