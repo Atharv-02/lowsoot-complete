@@ -1,12 +1,12 @@
-import { useState } from "react";
-import { useForm } from "react-hook-form";
-import { useDataboard } from "../contexts/Databoard";
-import { postrecord } from "../functions/databoardfunctions";
-
+import { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { useDataboard } from '../contexts/Databoard';
+import { postrecord } from '../functions/databoardfunctions';
+import axios from 'axios';
 export function Addmodal(params) {
   const { databoardstate, databoarddispatch } = useDataboard();
   const { setModalstatus } = params;
-  const [travelbydata, setTravelbydata] = useState("");
+  const [travelbydata, setTravelbydata] = useState('');
   const onSubmit = async (data) => {
     setModalstatus(false);
     const monthval = new Date(data.date);
@@ -33,7 +33,7 @@ export function Addmodal(params) {
         } );
 */
       databoarddispatch({
-        type: "ADD_REORD",
+        type: 'ADD_REORD',
         payload: {
           newrecord: {
             ...res.record,
@@ -51,43 +51,43 @@ export function Addmodal(params) {
     defaultValues: {},
   });
   return (
-    <div className="dialog__overlay">
-      <div className="dialog">
-        <h1 className="dialog__header">Insert Emission</h1>
-        <form onSubmit={handleSubmit(onSubmit)} className="dialog__form">
-          <div className="dialog__row">
-            <div className="dialog__inputcont">
+    <div className='dialog__overlay'>
+      <div className='dialog'>
+        <h1 className='dialog__header'>Insert Emission</h1>
+        <form onSubmit={handleSubmit(onSubmit)} className='dialog__form'>
+          <div className='dialog__row'>
+            <div className='dialog__inputcont'>
               <input
-                type="number"
-                min="1"
-                placeholder="passengers"
-                className="dialog__input"
+                type='number'
+                min='1'
+                placeholder='passengers'
+                className='dialog__input'
                 required={true}
-                {...register("passengers")}
+                {...register('passengers')}
               />
             </div>
           </div>
-          <div className="dialog__row">
-            <div className="dialog__inputcont">
+          <div className='dialog__row'>
+            <div className='dialog__inputcont'>
               <input
-                type="number"
-                placeholder="distance"
-                min="1"
-                className="dialog__input"
+                type='number'
+                placeholder='distance'
+                min='1'
+                className='dialog__input'
                 required={true}
-                {...register("distance")}
+                {...register('distance')}
               />
             </div>
           </div>
-          <div className="dialog__row">
-            <div className="dialog__inputcont">
+          <div className='dialog__row'>
+            <div className='dialog__inputcont'>
               <select
-                {...register("travelBy")}
-                className="dialog__inputslect"
+                {...register('travelBy')}
+                className='dialog__inputslect'
                 required={true}
                 onChange={(eve) => setTravelbydata(eve.target.value)}
               >
-                <option value="">--Travel by--</option>
+                <option value=''>--Travel by--</option>
                 {[...databoardstate.factorarr].map((tby, idx) => (
                   <option key={idx + 1} value={tby}>
                     {tby}
@@ -96,14 +96,14 @@ export function Addmodal(params) {
               </select>
             </div>
           </div>
-          <div className="dialog__row">
-            <div className="dialog__inputcont">
+          <div className='dialog__row'>
+            <div className='dialog__inputcont'>
               <select
-                {...register("factorType")}
-                className="dialog__inputslect"
+                {...register('factorType')}
+                className='dialog__inputslect'
                 required={true}
               >
-                <option value="">--Factor--</option>
+                <option value=''>--Factor--</option>
                 {[...databoardstate.allfactors[travelbydata]].map((facto) => (
                   <option key={JSON.stringify(facto)} value={facto.id}>
                     {facto.factor}
@@ -112,21 +112,21 @@ export function Addmodal(params) {
               </select>
             </div>
           </div>
-          <div className="dialog__row">
-            <div className="dialog__inputcont">
+          <div className='dialog__row'>
+            <div className='dialog__inputcont'>
               <input
-                className="dialog__inputdate"
-                type="datetime-local"
-                {...register("date")}
+                className='dialog__inputdate'
+                type='datetime-local'
+                {...register('date')}
                 required={true}
               />
             </div>
           </div>
-          <button type="submit" className="dialog__btn">
+          <button type='submit' className='dialog__btn'>
             Insert
           </button>
         </form>
-        <button onClick={() => setModalstatus(false)} className="dialog__btn">
+        <button onClick={() => setModalstatus(false)} className='dialog__btn'>
           Discard
         </button>
       </div>
