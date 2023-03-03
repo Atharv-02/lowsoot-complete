@@ -26,7 +26,7 @@ export function Databoardtablep() {
     });
 
     await axios.post(
-      'http://15.207.87.23:3000/productEmission',
+      'https://www.lowsootbackend.xyz/productEmission',
       {
         numberOfItems: items,
         type: product,
@@ -53,7 +53,7 @@ export function Databoardtablep() {
         // };
 
         const { data: resp } = await axios.get(
-          'http://15.207.87.23:3000/productEmissions',
+          'https://www.lowsootbackend.xyz/productEmissions',
 
           config
         );

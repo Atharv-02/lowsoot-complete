@@ -28,7 +28,7 @@ export function Databoardtablecn() {
     console.log('h');
     try {
       await axios.post(
-        'http://15.207.87.23:3000/task',
+        'https://www.lowsootbackend.xyz/task',
         {
           emissionType: emType,
           emissionTillDate: tillDate,
@@ -73,7 +73,7 @@ export function Databoardtablecn() {
         };
         const {
           data: { taskNames: response },
-        } = await axios.get('http://15.207.87.23:3000/taskNames', config);
+        } = await axios.get('https://www.lowsootbackend.xyz/taskNames', config);
         console.log(response);
         setData(response);
         console.log(response);
@@ -95,7 +95,7 @@ export function Databoardtablecn() {
         // };
 
         const { data: resp } = await axios.get(
-          'http://15.207.87.23:3000/task',
+          'https://www.lowsootbackend.xyz/task',
 
           config
         );
@@ -134,7 +134,7 @@ export function Databoardtablecn() {
         const {
           data: { total: resp },
         } = await axios.post(
-          'http://15.207.87.23:3000/getTotal',
+          'https://www.lowsootbackend.xyz/getTotal',
           { emissionType: emType || '' },
           config
         );

@@ -35,7 +35,7 @@ export function Databoardtableco() {
         setLoading(false);
 
         await axios.post(
-          'hhttp://15.207.87.23:3000/travelEmission',
+          'https://www.lowsootbackend.xyz/travelEmission',
           {
             distance: distance,
             travelBy: 'Road',
@@ -69,7 +69,7 @@ export function Databoardtableco() {
       try {
         const {
           data: { Road: response },
-        } = await axios.get('http://15.207.87.23:3000/allTravelFactors');
+        } = await axios.get('https://www.lowsootbackend.xyz/allTravelFactors');
 
         setData(response);
       } catch (err) {
@@ -91,7 +91,7 @@ export function Databoardtableco() {
         // };
 
         const { data: resp } = await axios.get(
-          'http://15.207.87.23:3000/travelEmissions',
+          'https://www.lowsootbackend.xyz/travelEmissions',
 
           config
         );

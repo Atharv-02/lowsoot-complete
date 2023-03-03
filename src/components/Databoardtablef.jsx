@@ -30,7 +30,7 @@ export function Databoardtablef() {
       console.log(a);
 
       await axios.post(
-        'http://15.207.87.23:3000/electricityEmission',
+        'https://www.lowsootbackend.xyz/electricityEmission',
         {
           date: dates,
           factorType: a.id,
@@ -58,7 +58,7 @@ export function Databoardtablef() {
       try {
         const {
           data: { All: response },
-        } = await axios.get('http://15.207.87.23:3000/allFuelFactors');
+        } = await axios.get('https://www.lowsootbackend.xyz/allFuelFactors');
         console.log(response);
 
         setData(response);
@@ -80,7 +80,7 @@ export function Databoardtablef() {
         // };
 
         const { data: resp } = await axios.get(
-          'http://15.207.87.23:3000/fuelEmissions',
+          'https://www.lowsootbackend.xyz/fuelEmissions',
 
           config
         );

@@ -21,7 +21,7 @@ export function Dashparameters() {
         // };
 
         const { data } = await axios.get(
-          'http://15.207.87.23:3000/visualisation',
+          'https://www.lowsootbackend.xyz/visualisation',
           config
         );
         console.log(data);

@@ -26,7 +26,7 @@ export function Dashgraphcn() {
     try {
       setLoading(true);
       const c = await axios.post(
-        'http://15.207.87.23:3000/taskData',
+        'https://www.lowsootbackend.xyz/taskData',
         { emissionType: 'Fuel' },
         config
       );

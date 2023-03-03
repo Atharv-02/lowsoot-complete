@@ -52,7 +52,7 @@ export function Dashboard() {
         console.log(dateval);
         console.log(enddateval);
         const { data } = await axios.post(
-          'http://15.207.87.23:3000/summary',
+          'https://www.lowsootbackend.xyz/summary',
           {
             startDate: dateval,
             endDate: enddateval,

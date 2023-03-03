@@ -38,7 +38,7 @@ export function Databoardtablec() {
       setLoading(false);
       try {
         await axios.post(
-          'http://15.207.87.23:3000/cargoEmission',
+          'https://www.lowsootbackend.xyz/cargoEmission',
           {
             weight: wt,
             distance: distance,
@@ -74,7 +74,7 @@ export function Databoardtablec() {
       try {
         const {
           data: { Road: response },
-        } = await axios.get('http://15.207.87.23:3000/allCargoFactors');
+        } = await axios.get('https://www.lowsootbackend.xyz/allCargoFactors');
         console.log(response);
         setData(response);
         console.log(response);
@@ -97,7 +97,7 @@ export function Databoardtablec() {
         // };
 
         const { data: resp } = await axios.get(
-          'http://15.207.87.23:3000/cargoEmissions',
+          'https://www.lowsootbackend.xyz/cargoEmissions',
 
           config
         );

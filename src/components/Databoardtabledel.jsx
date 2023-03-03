@@ -46,7 +46,7 @@ export function Databoardtabledel() {
           travelBy: 'Road',
         });
         await axios.post(
-          'http://15.207.87.23:3000/deliveryEmission',
+          'https://www.lowsootbackend.xyz/deliveryEmission',
           {
             numberOfItems: items,
             type: product,
@@ -92,7 +92,10 @@ export function Databoardtabledel() {
         };
         const {
           data: { Road: response },
-        } = await axios.get('http://15.207.87.23:3000/allCargoFactors', config);
+        } = await axios.get(
+          'https://www.lowsootbackend.xyz/allCargoFactors',
+          config
+        );
 
         setData(response);
         console.log(response);
@@ -111,7 +114,10 @@ export function Databoardtabledel() {
         };
         const {
           data: { cities: response },
-        } = await axios.get('http://15.207.87.23:3000/citiesList', config);
+        } = await axios.get(
+          'https://www.lowsootbackend.xyz/citiesList',
+          config
+        );
 
         setCity(response);
         console.log(response);
@@ -134,7 +140,7 @@ export function Databoardtabledel() {
         // };
 
         const { data: resp } = await axios.get(
-          'http://15.207.87.23:3000/deliveryEmissions',
+          'https://www.lowsootbackend.xyz/deliveryEmissions',
 
           config
         );
