@@ -45,7 +45,12 @@ export function Dashparameters() {
             <div className='dashparameter scope-1-fill'>
               <div className='dashparameter___textcont'>
                 <p className='dashparameter___textvalue scope-1-value-fill'>
-                  <span>{data.total}</span> CO<sub>2</sub>e
+                  <span>
+                    {data.total
+                      .toString()
+                      .substring(0, data.total.toString().indexOf('.') + 4)}
+                  </span>{' '}
+                  CO<sub>2</sub>e
                 </p>
                 <p className='dashparameter___textname'>Total</p>
               </div>
@@ -53,7 +58,14 @@ export function Dashparameters() {
             <div className='dashparameter scope-2-fill'>
               <div className='dashparameter___textcont'>
                 <p className='dashparameter___textvalue scope-2-value-fill'>
-                  <span>{data.scope1}</span> CO<sub>2</sub>e
+                  <span>
+                    {data.scope1.toString().indexOf('.') !== -1
+                      ? data.scope1
+                          .toString()
+                          .substring(0, data.scope1.toString().indexOf('.') + 4)
+                      : data.scope1}
+                  </span>{' '}
+                  kCO<sub>2</sub>e
                 </p>
                 <p className='dashparameter___textname'>Scope1</p>
               </div>
@@ -61,7 +73,14 @@ export function Dashparameters() {
             <div className='dashparameter scope-3-fill'>
               <div className='dashparameter___textcont'>
                 <p className='dashparameter___textvalue scope-3-value-fill'>
-                  <span>{data.scope2}</span> CO<sub>2</sub>e
+                  <span>
+                    {data.scope2.toString().indexOf('.') !== -1
+                      ? data.scope2
+                          .toString()
+                          .substring(0, data.scope2.toString().indexOf('.') + 4)
+                      : data.scope2}
+                  </span>{' '}
+                  kCO<sub>2</sub>e
                 </p>
                 <p className='dashparameter___textname'>Scope2</p>
               </div>
@@ -69,7 +88,14 @@ export function Dashparameters() {
             <div className='dashparameter scope-4-fill'>
               <div className='dashparameter___textcont'>
                 <p className='dashparameter___textvalue scope-4-value-fill'>
-                  <span>{data.scope3}</span> CO<sub>2</sub>e
+                  <span>
+                    {data.scope3.toString().indexOf('.') !== -1
+                      ? data.scope3
+                          .toString()
+                          .substring(0, data.scope3.toString().indexOf('.') + 4)
+                      : data.scope3}
+                  </span>{' '}
+                  kCO<sub>2</sub>e
                 </p>
                 <p className='dashparameter___textname'>
                   Scope3

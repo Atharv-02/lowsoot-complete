@@ -213,7 +213,19 @@ export function Hompage() {
                           </p>
                           {console.log(data.totalElectricityUsage)}
                           <p className='summaryparam__value'>
-                            {data.totalElectricityUsage} KWh{' '}
+                            {data.totalElectricityUsage
+                              .toString()
+                              .indexOf('.') !== -1
+                              ? data.totalElectricityUsage
+                                  .toString()
+                                  .substring(
+                                    0,
+                                    data.totalElectricityUsage
+                                      .toString()
+                                      .indexOf('.') + 4
+                                  )
+                              : data.totalElectricityUsage}{' '}
+                            KWh
                           </p>
                         </div>
                         <div className='summaryparam'>
@@ -223,7 +235,19 @@ export function Hompage() {
                             Commuting
                           </p>
                           <p className='summaryparam__value'>
-                            {data.totalBusinessCommuteDistance} Kms{' '}
+                            {data.totalBusinessCommuteDistance
+                              .toString()
+                              .indexOf('.') !== -1
+                              ? data.totalBusinessCommuteDistance
+                                  .toString()
+                                  .substring(
+                                    0,
+                                    data.totalBusinessCommuteDistance
+                                      .toString()
+                                      .indexOf('.') + 4
+                                  )
+                              : data.totalBusinessCommuteDistance}{' '}
+                            Kms
                           </p>
                         </div>
                         <div className='summaryparam'>
@@ -232,7 +256,19 @@ export function Hompage() {
                             <br /> Commuting
                           </p>
                           <p className='summaryparam__value'>
-                            {data.totalEmployeeCommuteDistance} Kms{' '}
+                            {data.totalEmployeeCommuteDistance
+                              .toString()
+                              .indexOf('.') !== -1
+                              ? data.totalEmployeeCommuteDistance
+                                  .toString()
+                                  .substring(
+                                    0,
+                                    data.totalEmployeeCommuteDistance
+                                      .toString()
+                                      .indexOf('.') + 4
+                                  )
+                              : data.totalEmployeeCommuteDistance}{' '}
+                            Kms
                           </p>
                         </div>
                         {company == 2 ? (
@@ -244,7 +280,24 @@ export function Hompage() {
                               </p>
                               <p className='summaryparam__value'>
                                 {data['TotalProductSales']
-                                  ? data['total'] / data['TotalProductSales']
+                                  ? (data['total'] / data['TotalProductSales'])
+                                      .toString()
+                                      .indexOf('.') !== -1
+                                    ? (
+                                        data['total'] /
+                                        data['TotalProductSales']
+                                      )
+                                        .toString()
+                                        .substring(
+                                          0,
+                                          (
+                                            data['total'] /
+                                            data['TotalProductSales']
+                                          )
+                                            .toString()
+                                            .indexOf('.') + 4
+                                        )
+                                    : data['total'] / data['TotalProductSales']
                                   : '0'}{' '}
                                 CO
                                 <sub>2</sub>e{' '}
@@ -262,8 +315,21 @@ export function Hompage() {
                                 <br />
                               </p>
                               <p className='summaryparam__value'>
-                                {data.Product['Maternity Bra'].emissions}CO
-                                <sub>2</sub>e{' '}
+                                {data.Product['Maternity Bra'].emissions
+                                  .toString()
+                                  .indexOf('.') !== -1
+                                  ? data.Product['Maternity Bra'].emissions
+                                      .toString()
+                                      .substring(
+                                        0,
+                                        data.Product['Maternity Bra'].emissions
+                                          .toString()
+                                          .indexOf('.') + 4
+                                      )
+                                  : data.Product['Maternity Bra']
+                                      .emissions}{' '}
+                                CO
+                                <sub>2</sub>e
                               </p>
                             </div>
                           </>
@@ -288,7 +354,19 @@ export function Hompage() {
                                 <br />
                               </p>
                               <p className='summaryparam__value'>
-                                {data.Product['Regular Bra'].emissions} CO
+                                {data.Product['Regular Bra'].emissions
+                                  .toString()
+                                  .indexOf('.') !== -1
+                                  ? data.Product['Regular Bra'].emissions
+                                      .toString()
+                                      .substring(
+                                        0,
+                                        data.Product['Regular Bra'].emissions
+                                          .toString()
+                                          .indexOf('.') + 4
+                                      )
+                                  : data.Product['Regular Bra'].emissions}{' '}
+                                kCO
                                 <sub>2</sub>e{' '}
                               </p>
                             </div>
@@ -300,7 +378,19 @@ export function Hompage() {
                                 <br />
                               </p>
                               <p className='summaryparam__value'>
-                                {data.Product['Panty'].emissions} CO
+                                {data.Product['Panty'].emissions
+                                  .toString()
+                                  .indexOf('.') !== -1
+                                  ? data.Product['Panty'].emissions
+                                      .toString()
+                                      .substring(
+                                        0,
+                                        data.Product['Panty'].emissions
+                                          .toString()
+                                          .indexOf('.') + 4
+                                      )
+                                  : data.Product['Panty'].emissions}{' '}
+                                CO
                                 <sub>2</sub>e{' '}
                               </p>
                             </div>
@@ -313,7 +403,23 @@ export function Hompage() {
                                 <br />
                               </p>
                               <p className='summaryparam__value'>
-                                {data.Product['Lounge Long Tee Kind'].emissions}{' '}
+                                {data.Product['Lounge Long Tee Kind'].emissions
+                                  .toString()
+                                  .indexOf('.') !== -1
+                                  ? data.Product[
+                                      'Lounge Long Tee Kind'
+                                    ].emissions
+                                      .toString()
+                                      .substring(
+                                        0,
+                                        data.Product[
+                                          'Lounge Long Tee Kind'
+                                        ].emissions
+                                          .toString()
+                                          .indexOf('.') + 4
+                                      )
+                                  : data.Product['Lounge Long Tee Kind']
+                                      .emissions}{' '}
                                 CO
                                 <sub>2</sub>e{' '}
                               </p>
@@ -325,7 +431,22 @@ export function Hompage() {
                                 Loungee Dress kind
                               </p>
                               <p className='summaryparam__value'>
-                                {data.Product['Lounge Dress Kind'].emissions} CO
+                                {data.Product['Lounge Dress Kind'].emissions
+                                  .toString()
+                                  .indexOf('.') !== -1
+                                  ? data.Product['Lounge Dress Kind'].emissions
+                                      .toString()
+                                      .substring(
+                                        0,
+                                        data.Product[
+                                          'Lounge Dress Kind'
+                                        ].emissions
+                                          .toString()
+                                          .indexOf('.') + 4
+                                      )
+                                  : data.Product['Lounge Dress Kind']
+                                      .emissions}{' '}
+                                CO
                                 <sub>2</sub>e{' '}
                               </p>
                             </div>
@@ -345,7 +466,19 @@ export function Hompage() {
                                 Nighty
                               </p>
                               <p className='summaryparam__value'>
-                                {data.Product['Nighty'].emissions} CO
+                                {data.Product['Nighty'].emissions
+                                  .toString()
+                                  .indexOf('.') !== -1
+                                  ? data.Product['Nighty'].emissions
+                                      .toString()
+                                      .substring(
+                                        0,
+                                        data.Product['Nighty'].emissions
+                                          .toString()
+                                          .indexOf('.') + 4
+                                      )
+                                  : data.Product['Nighty'].emissions}{' '}
+                                CO
                                 <sub>2</sub>e{' '}
                               </p>
                             </div>
@@ -356,7 +489,20 @@ export function Hompage() {
                                 Lounge Bottom
                               </p>
                               <p className='summaryparam__value'>
-                                {data.Product['Lounge Bottom'].emissions} CO
+                                {data.Product['Lounge Bottom'].emissions
+                                  .toString()
+                                  .indexOf('.') !== -1
+                                  ? data.Product['Lounge Bottom'].emissions
+                                      .toString()
+                                      .substring(
+                                        0,
+                                        data.Product['Lounge Bottom'].emissions
+                                          .toString()
+                                          .indexOf('.') + 4
+                                      )
+                                  : data.Product['Lounge Bottom']
+                                      .emissions}{' '}
+                                CO
                                 <sub>2</sub>e{' '}
                               </p>
                             </div>
@@ -367,7 +513,19 @@ export function Hompage() {
                                 Maternity Bra
                               </p>
                               <p className='summaryparam__value'>
-                                {data.Product['Maternity Bra'].saved} CO
+                                {data.Product['Maternity Bra'].saved
+                                  .toString()
+                                  .indexOf('.') !== -1
+                                  ? data.Product['Maternity Bra'].saved
+                                      .toString()
+                                      .substring(
+                                        0,
+                                        data.Product['Maternity Bra'].saved
+                                          .toString()
+                                          .indexOf('.') + 4
+                                      )
+                                  : data.Product['Maternity Bra'].saved}{' '}
+                                CO
                                 <sub>2</sub>e{' '}
                               </p>
                             </div>
@@ -378,7 +536,19 @@ export function Hompage() {
                                 Regular Bra
                               </p>
                               <p className='summaryparam__value'>
-                                {data.Product['Regular Bra'].saved} CO
+                                {data.Product['Regular Bra'].saved
+                                  .toString()
+                                  .indexOf('.') !== -1
+                                  ? data.Product['Regular Bra'].saved
+                                      .toString()
+                                      .substring(
+                                        0,
+                                        data.Product['Regular Bra'].saved
+                                          .toString()
+                                          .indexOf('.') + 4
+                                      )
+                                  : data.Product['Regular Bra'].saved}{' '}
+                                CO
                                 <sub>2</sub>e{' '}
                               </p>
                             </div>
@@ -397,7 +567,19 @@ export function Hompage() {
                                 panty
                               </p>
                               <p className='summaryparam__value'>
-                                {data.Product['Panty'].saved} CO
+                                {data.Product['Panty'].saved
+                                  .toString()
+                                  .indexOf('.') !== -1
+                                  ? data.Product['Panty'].saved
+                                      .toString()
+                                      .substring(
+                                        0,
+                                        data.Product['Panty'].saved
+                                          .toString()
+                                          .indexOf('.') + 4
+                                      )
+                                  : data.Product['Panty'].saved}{' '}
+                                CO
                                 <sub>2</sub>e{' '}
                               </p>
                             </div>
@@ -408,7 +590,24 @@ export function Hompage() {
                               </p>
                               <p className='summaryparam__value'>
                                 {data['TotalProductSales']
-                                  ? data['total'] / data['TotalProductSales']
+                                  ? (data['total'] / data['TotalProductSales'])
+                                      .toString()
+                                      .indexOf('.') !== -1
+                                    ? (
+                                        data['total'] /
+                                        data['TotalProductSales']
+                                      )
+                                        .toString()
+                                        .substring(
+                                          0,
+                                          (
+                                            data['total'] /
+                                            data['TotalProductSales']
+                                          )
+                                            .toString()
+                                            .indexOf('.') + 4
+                                        )
+                                    : data['total'] / data['TotalProductSales']
                                   : '0'}{' '}
                                 CO
                                 <sub>2</sub>e{' '}
